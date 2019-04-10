@@ -39,7 +39,7 @@ function resourcesFromSummaryInfo(application: appModels.Application, roots: app
         const root = rootByKey.get(nodeKey(summary));
         return {
             name: summary.name,
-            namespace: summary.namespace || application.metadata.namespace,
+            namespace: summary.namespace,
             kind: summary.kind,
             group: summary.group,
             version: summary.version,
